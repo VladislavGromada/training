@@ -1,0 +1,7 @@
+text = input('').lower()
+countant = {}
+for word in text.split():
+    countant[word] = countant.get(word, 0) + 1
+
+for x in countant:
+    print(x, countant[x], end = '\n')
